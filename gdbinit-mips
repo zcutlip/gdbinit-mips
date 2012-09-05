@@ -1,10 +1,28 @@
+#A gdbinit file for use when debugging on the MIPS CPU architecture.
+#Copyright (C) 2012  Zachary Cutlip [uid000_at_gmail_dot_com]
+#                                   TWitter: @zcutlip
+#
+#This program is free software; you can redistribute it and/or
+#modify it under the terms of the GNU General Public License
+#as published by the Free Software Foundation; either version 2
+#of the License, or (at your option) any later version.
+#
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with this program; if not, write to the Free Software
+#Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
 #-----------------------------------------------------------------------------
 #                                global options
 #-----------------------------------------------------------------------------
 set height 0
 set width 0
 set history save on
-set history filename ~/.gdb_history
+set history filename ~/.gdb_mips_history
 
 set $64BITS = 0
 set $CONTEXTSIZE_CODE = 8
