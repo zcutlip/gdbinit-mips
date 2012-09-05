@@ -1,0 +1,16 @@
+This is a gdbinit file to make gdb more functional and useful when debugging
+programs running on a MIPS cpu.
+
+I have shamelessly aped this from http://reverse.put.as/gdbinit/ which can be
+checked out from https://github.com/gdbinit. Much thanks to @osxreverser for an
+excellent x86/x86-64/ARM gdbinit file.
+
+I have used this gdbinit extensively on MIPS little endian, but only briefly on
+MIPS big endian.  There may be endianness implications I haven't considered.
+
+You can use it by either making it your ~/.gdbinit (probably not ideal if you
+ever debug non-mips) or by doing:
+
+gdb -x ./gdbinit-mips
+
+
